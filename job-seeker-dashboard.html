@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Seeker Dashboard</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Job Seeker Dashboard</h1>
+    </header>
+    <main>
+        <section class="profile">
+            <h2>Your Profile</h2>
+            <form id="profile-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Contact Information" required>
+                <input type="text" placeholder="Location" required>
+                <input type="file" accept=".pdf,.doc,.docx" placeholder="Resume Upload">
+                <!-- Other fields like Education and Experience -->
+                <button type="submit">Save Profile</button>
+            </form>
+        </section>
+        <section class="job-search">
+            <h2>Search Jobs</h2>
+            <input type="text" placeholder="Search by keyword">
+            <select>
+                <option>Category/Industry</option>
+                <!-- Options for industries -->
+            </select>
+            <select>
+                <option>Location</option>
+                <!-- Options for locations -->
+            </select>
+            <select>
+                <option>Job Type</option>
+                <!-- Options for job types -->
+            </select>
+            <button type="button">Search</button>
+            <div class="search-results">
+                <!-- Search results appear here -->
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/job-seeker.js"></script>
+</body>
+</html>

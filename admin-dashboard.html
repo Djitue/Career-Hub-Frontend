@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Admin Dashboard</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="admin-login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <!-- User Management Section -->
+        <section class="dashboard-section" id="user-management">
+            <h2>Manage Users</h2>
+            <button onclick="addUser()">Add User</button>
+            <button onclick="editUser()">Edit User</button>
+            <button onclick="deleteUser()">Delete User</button>
+        </section>
+
+        <!-- Job Listings Management Section -->
+        <section class="dashboard-section" id="job-listings-management">
+            <h2>Manage Job Listings</h2>
+            <button onclick="approveJob()">Approve Job</button>
+            <button onclick="rejectJob()">Reject Job</button>
+            <button onclick="removeJob()">Remove Job</button>
+        </section>
+
+        <!-- Platform Activity Section -->
+        <section class="dashboard-section" id="platform-activity">
+            <h2>Platform Activity</h2>
+            <p>Review statistics on applications, employer engagement, and job seeker activity.</p>
+            <button onclick="viewStats()">View Statistics</button>
+        </section>
+    </main>
+
+    <script src="assets/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Panel</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Employer Dashboard</h1>
+    </header>
+    <main>
+        <section class="job-posting">
+            <h2>Post a New Job</h2>
+            <form id="job-form">
+                <input type="text" placeholder="Job Title" required>
+                <input type="text" placeholder="Company Name" required>
+                <input type="text" placeholder="Location" required>
+                <input type="text" placeholder="Job Requirements">
+                <input type="text" placeholder="Salary Range">
+                <input type="text" placeholder="job type">
+                <input type="date" placeholder="Application Deadline">
+                <button type="submit">Post Job</button>
+            </form>
+        </section>
+                <!-- Job Listings Management Section -->
+        <section class="dashboard-section" id="job-listings-management">
+            <h2>Manage Job Listings</h2>
+            <button onclick="approveJob()">Approve Job</button>
+            <button onclick="rejectJob()">Reject Job</button>
+            <button onclick="removeJob()">Remove Job</button>
+        </section>
+    </main>
+    <script src="assets/js/employer.js"></script>
+</body>
+</html>
