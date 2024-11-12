@@ -7,17 +7,20 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Admin Dashboard</h1>
-        <nav class="navbar">
+    <header>
+        <h1>Career Hub</h1>
+        <nav>
+            <a href="admin-login.html">Admin</a>
+            <a href="employer-login.html">Employer</a>
+            <a href="job-seeker-login.html">Job Seeker</a>
             <a href="index.html">Home</a>
-            <a href="admin-login.html">Logout</a>
         </nav>
     </header>
 
     <main class="dashboard">
         <!-- User Management Section -->
         <section class="dashboard-section" id="user-management">
+            <h1>ADMIN DASHBOARD</h1>
             <h2>Manage Users</h2>
             <button onclick="addUser()">Add User</button>
             <button onclick="editUser()">Edit User</button>

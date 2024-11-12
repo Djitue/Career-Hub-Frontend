@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Registered Users</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Registered uers</h1>
+        <nav>
+            <a href="admin-login.html">Admin</a>
+            <a href="employer-login.html">Employer</a>
+            <a href="job-seeker-login.html">Job Seeker</a>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main class="view-users">
+        <h2>User List</h2>
+        <table class="user-table">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+                <!-- Sample User Row -->
+                <tr>
+                    <td>John Doe</td>
+                    <td>johndoe@example.com</td>
+                    <td>Employer</td>
+                    <td>
+                        <button onclick="editUser()">Edit</button>
+                        <button onclick="deleteUser()">Delete</button>
+                    </td>
+                </tr>
+                <!-- Dynamic user rows will be populated here by JavaScript -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="assets/js/admin.js"></script>
+</body>
+</html>
